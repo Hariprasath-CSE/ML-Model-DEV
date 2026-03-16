@@ -1,0 +1,10 @@
+ML Premium Prediction API
+
+Model: XGBoost Regressor
+Accuracy: R2 Score ≈ 0.92
+
+Run training:
+python train_model.py
+
+Start API:
+python app.py
