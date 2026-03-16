@@ -1,14 +1,21 @@
-<<<<<<< HEAD
-ML Premium Prediction API
+# ML Premium Prediction API
 
-Model: XGBoost Regressor
-Accuracy: R2 Score ≈ 0.92
+This project provides a **Machine Learning API** that predicts dynamic insurance premiums for gig workers based on risk factors such as weather conditions and income volatility.
 
-Run training:
-python train_model.py
+---
 
-Start API:
-python app.py
-=======
-# ML-Model-DEV
->>>>>>> 11c29683c26cf9b87f2dc7e281837ec9c6dcbb1d
+## ML Model
+
+Model Used: **XGBoost Regressor**
+
+Accuracy: **R² Score ≈ 0.92**
+
+Why XGBoost?
+
+- Handles nonlinear relationships well
+- Works well for tabular data
+- Widely used in financial and insurance prediction models
+
+---
+
+## Project Structure
