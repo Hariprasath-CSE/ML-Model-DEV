@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import joblib
 import numpy as np
+import os
 
 app = Flask(__name__)
 
@@ -51,7 +52,7 @@ def predict():
     # Calculate coverage
     coverage_limit = weekly_income_last_week * 0.8
 
-    # Convert numpy values to Python float
+    # Return response (convert to Python float)
     return jsonify({
         "recommended_premium": float(round(premium, 2)),
         "coverage_limit": float(round(coverage_limit, 2)),
@@ -59,5 +60,7 @@ def predict():
     })
 
 
+# Deployment-ready server config
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
