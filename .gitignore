@@ -1,0 +1,45 @@
+# ── Model binaries (too large; deploy separately or use Git LFS) ──
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# ── Python cache ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── IDE / editor folders ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS generated ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Test / coverage ───────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Build / dist ──────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+logs/
